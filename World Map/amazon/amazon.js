@@ -1,6 +1,9 @@
 function fillBody() {
-    debugger
+
     const body = document.querySelector('body');
+    body.innerHTML = `    <video autoplay muted loop id="myVideo">
+    <source src="video.mp4" type="video/mp4">
+    </video>    `;
     const h1 = document.createElement("h1")
     h1.textContent = "Амазонска екваториална гора";
     body.appendChild(h1)
