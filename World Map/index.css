@@ -1,0 +1,17 @@
+h1{
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 40%;
+    display: none;
+    border: 2px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color:   black;
+    color: white;
+}
+img {
+    padding: 120px; 
+}
