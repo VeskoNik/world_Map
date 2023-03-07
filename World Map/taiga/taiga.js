@@ -30,7 +30,7 @@ function fill() {
         
         button.textContent = 'Научи повече'
         button.addEventListener('click', ()=>{
-            location.href = 'https://bg.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B9%D0%B3%D0%B0'
+            window.open('https://bg.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B9%D0%B3%D0%B0','_blank')
         })
         body.appendChild(button)
 
