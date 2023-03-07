@@ -34,7 +34,7 @@ function fill() {
         const button2 = document.createElement('button');
         button2.textContent = 'Още информация'
         button2.addEventListener('click', ()=>{
-            location.href = 'https://bg.wikipedia.org/wiki/Земя_Уилкс'
+            window.open('https://bg.wikipedia.org/wiki/Земя_Уилкс','_blank')
         })
         body.appendChild(button2)
     }
