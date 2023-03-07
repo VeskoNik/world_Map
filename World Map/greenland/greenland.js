@@ -35,7 +35,7 @@ function fill() {
         const button2 = document.createElement('button');
         button2.textContent = 'Още информация'
         button2.addEventListener('click', ()=>{
-            location.href = 'https://bg.wikipedia.org/wiki/%D0%93%D1%80%D0%B5%D0%BD%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F'
+            window.open('https://bg.wikipedia.org/wiki/%D0%93%D1%80%D0%B5%D0%BD%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F','_blank')
         })
         body.appendChild(button2)
     }
