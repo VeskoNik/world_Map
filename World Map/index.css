@@ -4,8 +4,8 @@ body{
 h1{
     position: absolute;
     text-align: center;
-    top: 35%;
-    left: 40%;
+    top: 32%;
+    left: 37%;
     display: none;
     border: 2px solid black;
     border-bottom-left-radius: 5px;
