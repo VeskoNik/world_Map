@@ -66,6 +66,7 @@ function addEvent() {
             fillOpacity:0.8
         });
         document.querySelector('img').style.position = 'relative';
+        localStorage.clear()
     }
 
 
