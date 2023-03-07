@@ -1,6 +1,5 @@
 
 function addEvent() {
-    debugger
     const child = `
     <img src="picture.png" class="map" usemap="#image-map" style="position: relative;">
 
@@ -45,7 +44,6 @@ function addEvent() {
     });
 
     function onHover(event) {
-        debugger
         const h1 = document.getElementById('text');
         let hoveredTarget = event.target;
         let name = hoveredTarget.getAttribute('title')
@@ -72,7 +70,6 @@ function addEvent() {
 
 
     function outHover() {
-        debugger
 
         const div = document.getElementById('child');
         div.innerHTML = child
