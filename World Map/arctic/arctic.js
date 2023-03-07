@@ -35,7 +35,7 @@ function fill() {
         const button2 = document.createElement('button');
         button2.textContent = 'Още информация'
         button2.addEventListener('click', ()=>{
-            location.href = 'https://bg.wikipedia.org/wiki/Арктика'
+            window.open('https://bg.wikipedia.org/wiki/Арктика','_blank')
         })
         body.appendChild(button2)
     }
