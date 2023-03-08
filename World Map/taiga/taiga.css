@@ -24,6 +24,14 @@ p{
     text-align: center;
     font-size: 17px;
 }
+#backBtn{
+    background: rgba(0, 0, 0, 0.5) ;
+    position: fixed;
+    color: #f1f1f1;
+    top: 80%;
+    left: 80%;
+    width: 10%;
+}
 button{
     position: fixed;
     top: 80%;
