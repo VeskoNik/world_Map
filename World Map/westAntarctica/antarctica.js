@@ -1,9 +1,5 @@
 function fill() {
     const body = document.querySelector('body');
-    body.innerHTML = `
-    <video autoplay muted loop id="myVideo">
-    <source src="antarctica.mp4" type="video/mp4">
-    </video>    `;
     const h1 = document.createElement("h1")
     h1.textContent = "Западни антарктически ледници";
     body.appendChild(h1)
