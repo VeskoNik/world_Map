@@ -183,6 +183,7 @@ function onHover(event) {
 
     const h1 = document.getElementById('text');
     let hoveredTarget = event.target;
+    hoveredTarget.style.cursor = 'pointer';
     let name = hoveredTarget.getAttribute('title')
     document.getElementById('text').style.display = 'block'
     allAreas.forEach(area => {
