@@ -1,9 +1,9 @@
 let allAreas = Array.from(document.querySelectorAll('area'));
 allAreas.forEach(area => {
-    area.addEventListener('mouseover', onHover)
-    area.addEventListener('mouseout', outHover)
+    area.addEventListener('mouseover', onHover);
+    area.addEventListener('mouseout', outHover);
 });
-document.getElementById('child').addEventListener('click', onClick)
+document.getElementById('child').addEventListener('click', onClick);
 const coords = {
     "amazon": "453,362,441,370,435,375,425,377,416,378,411,374,405,374,399,372,392,375,385,372,376,371,369,372,362,376,360,383,362,390,366,395,371,400,377,406,384,408,392,412,396,417,401,422,406,424,413,421,422,418,415,409,411,404,421,403,426,413,436,407,447,398,455,389,459,384,463,378,468,374,462,367",
     "arctic": "231,81,243,90,266,94,280,98,296,100,322,103,355,103,365,89,377,79,392,73,403,71,420,61,436,54,450,47,461,30,479,26,479,13,480,0,457,0,439,0,416,0,238,2,231,25,227,31,222,39,221,48,219,58,220,68",
@@ -35,7 +35,7 @@ const coords = {
     "westAntarctica": "0,655,6,658,19,661,27,661,37,661,46,661,56,660,66,658,76,655,86,651,95,649,104,649,121,644,130,638,140,639,146,639,154,638,171,634,194,631,210,631,228,632,239,631,254,631,264,630,272,624,286,624,306,618,315,622,331,627,340,624,356,619,366,610,393,595,407,585,425,577,447,569,453,569,468,573,460,579,454,584,448,590,439,592,433,596,433,606,433,616,430,624,430,634,435,644,448,651,459,652,467,653,479,657,495,657,514,655,512,665,506,671,490,683,482,690,479,698,2,699",
     "wilkes": "994,592,1003,610,1003,619,1002,635,1002,645,1016,652,1018,663,1023,670,1036,674,1053,678,1067,662,1080,665,1087,657,1092,650,1096,643,1102,636,1096,627,1110,617,1107,605,1120,600,1129,595,1114,589,1097,589,1089,595,1078,593,1074,597,1065,593,1047,590,1028,590,1010,589,1000,586,993,586",
 
-}
+};
 
 let amazon = [`   
 <video autoplay muted loop id="myVideo">
@@ -79,7 +79,7 @@ let arctic = [`
 `Арктика (на гръцки: ἄρκτος, мечка) е северната полярна област на Земята, включваща краищата на материците Евразия и Северна Америка, почти целия Северен ледовит океан с островите (освен крайбрежните острови на Норвегия), а така също и прилежащите части на Атлантическия и Тихия океан. Южната граница на Арктика съвпада със северната граница на тундрата.
 
         Площ около 27 млн. кв. км. Понякога ограничават Арктика от юг със Северния полярен кръг (66° 33′ с. ш.), като в този случай нейната площ е 21 млн. кв. км. Площта на моретата и океаните е 14,8 млн. кв. км, а максималната дълбочина е 5571 м.`,
-    './arctic/arctic.jpg','arctic']
+    './arctic/arctic.jpg','arctic'];
 let greenland = [`
 <video autoplay muted loop id="myVideo">
 <source src="./greenland/greenland.mp4" type="video/mp4">
@@ -91,7 +91,7 @@ let greenland = [`
 <button id="infoBtn" >Научи повече</button>`, 'https://bg.wikipedia.org/wiki/%D0%93%D1%80%D0%B5%D0%BD%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F', `Гренландия (на гренландски: Kalaallit Nunaat; на датски: Grønland; букв. на български: „Земя на гренландците“, „Зелена земя“) е самоуправляваща се провинция, намираща се между Северния ледовит океан и Атлантическия океан. Тя представлява арктическа островна държава и е част от континента Северна Америка както в географски, така и в етнически смисъл. В политически и исторически план Гренландия е много по-тясно свързана с Европа и по-специално с Исландия, Дания и Норвегия. Страната е едновременно най-голямата зависима територия и най-големият остров. (Австралия и Антарктика са по-големи от Гренландия, но се считат за континенти, а не за острови.[1]) С население от 55 847 души (януари 2016) тя е една от най-рядко населените страни в света.
 
 През 1979 г. Дания предоставя на Гренландия известна автономия и я прави равнопоставен член на Кралство Дания. През 2008 г. Гренландия провежда референдум за по-голяма автономия. Това се осъществява през следващата година, като Дания запазва контрола над външната политика, отбраната, финансовата политика и осигурява годишна помощ от 3,4 млрд. датски крони или около 11 300 щатски долара на гренландец.`,
-'./greenland/greenland.jpeg','greenland']
+'./greenland/greenland.jpeg','greenland'];
 let taiga = [`<video autoplay muted loop id="myVideo">
 <source src="./taiga/Taiga.mp4" type="video/mp4">
 </video>
@@ -108,7 +108,7 @@ let taiga = [`<video autoplay muted loop id="myVideo">
 
 
 </p>
-<button id="infoBtn" >Научи повече</button>`,'https://bg.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B9%D0%B3%D0%B0']
+<button id="infoBtn" >Научи повече</button>`,'https://bg.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B9%D0%B3%D0%B0'];
 let corals = [`<video autoplay muted loop id="myVideo">
 <source src="./coralReef/coralReefs.mp4" type="video/mp4">
 </video>
@@ -122,7 +122,7 @@ let corals = [`<video autoplay muted loop id="myVideo">
         Коралите отделят твърд карбонатен екзоскелет, който поддържа и защитава корала. Повечето рифове растат най-добре в топли, плитки, чисти, слънчеви и вълнисти води. Кораловите рифове се образуват преди около 485 милиона години, в зората на ранен ордовик, замествайки микробните рифове на камбрия.
         
         Плитките коралови рифове образуват едни от най-разнообразните екосистеми на Земята. Те заемат по-малко от 0,1% от общата площ на световните океани, но представляват дом за поне 25% от всички морски видове, включително риби, мекотели, червеи, ракообразни, бодлокожи, водни гъби, опашнохордови и мешести. Кораловите рифове процъфтяват в океански води с малко хранителни вещества. Срещат се най-често в плитки тропични води, но дълбоководни и студеноводни коралови рифове също съществуват, макар и в по-малък мащаб.`,
-    './coralReef/corals.jpg']
+    './coralReef/corals.jpg'];
 let mountains =[`<video autoplay muted loop id="myVideo">
 <source src="./mountainGletchers/mountains.mp4" type="video/mp4">
 </video>
@@ -134,7 +134,7 @@ let mountains =[`<video autoplay muted loop id="myVideo">
 Ледниците се изучават от науката глациология. Те образуват криосферата на Земята и са най-големият резервоар на прясна вода в твърдо състояние. Те покриват огромни площи в полярните области, докато в тропиците заемат само най-високите части на планините. Другаде в Слънчевата система – на Марс – полярните шапки на полюсите съперничат на земните.
 
 Ледниците са сред най-мощните релефоформиращи сили в света. Днес те се срещат само в полярните области и по високите планински върхове, но все още покриват една десета от сушата. Огромните ледени полета на Гренландия и Антарктида са известни като континентални ледници. Те постоянно се движат от своя център към периферията, където ледът се разтопява или се отчупва и пада в морето, образувайки айсберги.</p>
-<button id="infoBtn" >Научи повече</button>`,'https://bg.wikipedia.org/wiki/%D0%9B%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA']
+<button id="infoBtn" >Научи повече</button>`,'https://bg.wikipedia.org/wiki/%D0%9B%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA'];
 let westAntactic = [`<video autoplay muted loop id="myVideo">
 <source src="./westAntarctica/antarctic.mp4" type="video/mp4">
 </video>
@@ -144,7 +144,7 @@ let westAntactic = [`<video autoplay muted loop id="myVideo">
 <img id="infoImg" src="./westAntarctica/antarctic.png" alt="westAntarctica">
 <button id="infoBtn" >Научи повече</button>`,'https://bg.wikipedia.org/wiki/Западен_шелфов_ледник',
 `Западният шелфов ледник (на немски: West-Schelfeis; на английски: West Ice Shelf) е деветият по големина (16 370 km²) шелфов ледник край бреговете на Антарктида. Заема част от крайбрежието на Източна Антарктида, край Брега Леополд и Астрид на Земя принцеса Елизабет, в акваторията на море Съдружество на запад и акваторията на море Дейвис на север и изток в Индоокеанския сектор на Южния океан. Простира се на протежение от 288 km между 81°20’ и.д. (залива Бариера) на запад и 87°40’ и.д. (залива Позадовски) на изток. Площ 16 370 km² (заедно с постоянно изменящата си конфигурация и територия северен полуостров Челюскинци площта му нараства до 26 010 km²), обем 9350 km³. От север в него се вдават заливите Николаев и Карелин. `  ,
-'./westAntarctica/antarctic.png','westAntarctica']
+'./westAntarctica/antarctic.png','westAntarctica'];
 let wilkes = [`<video autoplay muted loop id="myVideo">
 <source src="./wilkesLand/wilkes.mp4" type="video/mp4">
 </video>
@@ -154,7 +154,7 @@ let wilkes = [`<video autoplay muted loop id="myVideo">
 <img id="infoImg" src="./wilkesLand/wilkes.jpg" alt="wilkesLand">
 <button id="infoBtn" >Научи повече</button>`,'https://bg.wikipedia.org/wiki/Земя_Уилкс',
 `Земя Уилкс (на английски: Wilkes Land) е територия от Източна Антарктида, простираща се между 65°45’ и 67°10’ ю.ш. и 100°30’ и 136°10’ и.д., покрай Индоокеанския сектор на Южния океан. На запад граничи със Земя кралица Мери, а на изток – със Земя Адели. Крайбрежните и участъци от запад на изток носят названията Бряг Нокс, Бряг Бад, Бряг Сабрина, Бряг БАНЗАРЕ и Бряг Клари.Бреговата линия на Земя Уилкс, с дължина около 1800 km, в общи линии е слабо разчленена, като западната ѝ част попада в акваторията на море Моусън. На запад се простира големия шелфов ледник Шакълтън, а в централните части – шелфовите ледници Московски университет и Воейков. Около 110° и.д. е разположен големия залив Винсенс, а на 128° и.д. – залива Порпес. Крайбрежните острови са малко, основно в крайната западна част, „зазидани“ в шелфовия ледник Шакълтън – Мил, Новосилски, Боумън.`,
-'./wilkesLand/wilkes.jpg','wilkesLand']
+'./wilkesLand/wilkes.jpg','wilkesLand'];
 
 const views = {
     'Амазонска екваториална гора': amazon,
@@ -166,15 +166,15 @@ const views = {
     'Планински глетчери': mountains,
     'Западни антарктически ледници': westAntactic,
     'Уилкс Земя': wilkes,
-}
+};
 
 
 
 function onClick(ev) {
 
-    ev.preventDefault()
-    const clicked = ev.target
-    const html = views[clicked.title]
+    ev.preventDefault();
+    const clicked = ev.target;
+    const html = views[clicked.title];
     fill(html);
 
 }
@@ -183,9 +183,9 @@ function onHover(event) {
 
     const h1 = document.getElementById('text');
     let hoveredTarget = event.target;
-    hoveredTarget.style.cursor = 'pointer';
-    let name = hoveredTarget.getAttribute('title')
-    document.getElementById('text').style.display = 'block'
+    hoveredTarget.style.cursor = "pointer";
+    let name = hoveredTarget.getAttribute('title');
+    document.getElementById('text').style.display = "block";
     allAreas.forEach(area => {
         if (!(area.title == hoveredTarget.title) && !(area.title.includes(name))) {
             area.coords = ''
@@ -222,34 +222,34 @@ function outHover() {
         shadow: true,
         shadowRadius: 10,
     });
-    document.getElementById('text').style.display = 'none'
+    document.getElementById('text').style.display = "none";
 }
 function fill(html) {
     document.querySelector('body').innerHTML = html[0];
     
-    const infoBtn = document.getElementById('infoBtn')
-    const backBtn = document.getElementById('backBtn')
-    let target = html[1]
+    const infoBtn = document.getElementById('infoBtn');
+    const backBtn = document.getElementById('backBtn');
+    let target = html[1];
     if (html.length > 2) {
-        infoBtn.addEventListener('click', () => { more(html) })
+        infoBtn.addEventListener('click', () => { more(html) });
         
     } else {
         infoBtn.addEventListener('click', () => {
-            window.open(target, '_blank')
+            window.open(target, '_blank');
         })
   
     }
   
         backBtn.addEventListener('click', () => {
-            location.href = './index.html'
+            location.href = './index.html';
         })
         
 }
 
 
 function more(html) {
-    document.getElementById('infoBtn').remove()
-    document.getElementById('infoImg').remove()
+    document.getElementById('infoBtn').remove();
+    document.getElementById('infoImg').remove();
     const parent = document.querySelector('.fade');
     const p = document.createElement('p');
     p.textContent = html[2];
@@ -259,12 +259,12 @@ function more(html) {
     parent.appendChild(p);
     parent.appendChild(button2);
     button2.addEventListener('click', () => {
-        window.open(html[1], '_blank')
+        window.open(html[1], '_blank');
     })
     document.getElementById('backBtn').remove();
     const btn = document.createElement('button');
     btn.innerText = 'Назад';
-    btn.id = 'backBtn'
+    btn.id = 'backBtn';
     btn.addEventListener('click', () => { backfill(html) });
     document.querySelector('body').appendChild(btn);
 
@@ -274,21 +274,21 @@ function backfill(html) {
     document.querySelector('p').remove();
     document.getElementById('moreBtn').remove();
     const img = document.createElement('img');
-    img.src = html[3]
-    img.id = 'infoImg'
-    img.alt = html[4]
+    img.src = html[3];
+    img.id = 'infoImg';
+    img.alt = html[4];
     const button = document.createElement('button');
-    button.id = 'infoBtn'
+    button.id = 'infoBtn';
     button.textContent = 'Научи повече';
-    button.addEventListener('click' , ()=>{more(html)})
-    parent.appendChild(img)
-    parent.appendChild(button)
-    document.getElementById('backBtn').remove()
+    button.addEventListener('click' , ()=>{more(html)});
+    parent.appendChild(img);
+    parent.appendChild(button);
+    document.getElementById('backBtn').remove();
     const btn = document.createElement('button');
     btn.innerText = 'Назад';
-    btn.id = 'backBtn'
+    btn.id = 'backBtn';
     btn.addEventListener('click', () => {
-        location.href = './index.html'
+        location.href = './index.html';
     })
    document.querySelector('body').appendChild(btn);
 
